@@ -1,0 +1,26 @@
+	Scanner sc = new Scanner(System.in);
+		
+		LinkedList<Piloto> piloto = new LinkedList<>();
+		// ArrayPiloto piloto [] ;
+
+		Piloto p = new Piloto();
+		
+		System.out.println("Entre com Nome Piloto : ");
+		p.setNome(sc.nextLine());
+		System.out.println("Numero de Identificação do Piloto");
+		p.setNumeroPiloto(sc.nextInt());
+		System.out.println("Voltas Completas. . . ");
+		int quantidadeDeVoltas = sc.nextInt();
+		int voltas[] = new int[quantidadeDeVoltas];
+		int somaTempo = 0;
+
+		for (int i = 0; i < quantidadeDeVoltas; i++) {
+			System.out.println("Volta de numero : " + i);
+			System.out.println("tempo da volta : ");
+			int tempoDaVolta = sc.nextInt();
+			somaTempo = somaTempo + tempoDaVolta;
+
+		}
+		System.out.println(somaTempo + " tempo total");
+
+	}
